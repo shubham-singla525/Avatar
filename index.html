@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test api</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <h1>WHAT DOES YOUR NAME SAY ABOUT YOUR PERSONALITY?</h1>
+        <div class="centreDiv">
+            <div class="details">
+                <label for="">ENTER YOUR NAME</label><br>
+                <input type="text" placeholder="Enter your name" style="font-size:1em;" id="nameId">
+
+            </div>
+          <div class="imgDiv">
+              <img src="./image/dragon.png" width="200" height="200" alt="img" id="imgchange">
+
+          </div>
+        <button>Click Me</button>
+    </div>
+        
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script>
+        $('button').click(function(){
+           const a=$('#nameId').val();
+           alert(a);
+           $('#imgchange').attr('src',`https://joeschmoe.io/api/v1/${a}`);
+        });
+    </script>
+</body>
+</html>

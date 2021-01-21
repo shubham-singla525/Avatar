@@ -1,0 +1,33 @@
+body{
+    background-color: blueviolet;
+    text-shadow: grey;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Potta One', cursive;
+    color:white;
+}
+.centreDiv{
+    border-style:solid;
+    border:1px solid black;
+    text-align: center;
+    margin:auto;
+    text-decoration: rgb(212, 167, 16);
+   background-color:rgb(212, 167, 16);
+   width:50%;
+   height:25em;
+   padding-top: 1em;
+   
+}
+#nameId{
+    margin-top:1em;
+    margin-bottom: 1em;
+}
+button{
+   
+    font-size:1em;
+    margin-bottom: 1em;
+    background-color: blue;
+    font-family: 'Potta One', cursive;
+    color:white;
+
+}
